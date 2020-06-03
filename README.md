@@ -1,2 +1,2 @@
-# markup_praactice
+# markup_practice
 マークアップを学習するためのプロジェクト
