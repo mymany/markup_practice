@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID LAYOUT</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="item item-maindish">
+        <a href="#">
+            <img class="image" src="./images/image_S_1.jpg" alt="テスト">
+            <div class="category">MAIN</div>
+            <p class="description">恥の多い生涯を送って来ました。</p>
+        </a>
+    </section>
+    <section class="item item-appetizer">
+        <a href="#">
+            <img class="image" src="./images/image_S_2.jpg" alt="テスト">
+            <div class="category">MAIN</div>
+            <p class="description">恥の多い生涯を送って来ました。</p>
+        </a>
+    </section>
+    <section class="item item-column">
+        <a href="#">
+            <img class="image" src="./images/image_S_3.jpg" alt="テスト">
+            <div class="category">MAIN</div>
+            <p class="description">恥の多い生涯を送って来ました。</p>
+        </a>
+    </section>
+    <section class="item item-breaktime">
+        <a href="#">
+            <img class="image" src="./images/image_S_4.jpg" alt="テスト">
+            <div class="category">MAIN</div>
+            <p class="description">恥の多い生涯を送って来ました。</p>
+        </a>
+    </section>
+
+    <section class="item item-maindish">
+        <a href="#">
+            <img class="image" src="./images/image_S_5.jpg" alt="テスト">
+            <div class="category">MAIN</div>
+            <p class="description">恥の多い生涯を送って来ました。</p>
+        </a>
+    </section>
+
+    <section class="item item-breaktime">
+        <a href="#">
+            <img class="image" src="./images/image_S_6.jpg" alt="テスト">
+            <div class="category">MAIN</div>
+            <p class="description">恥の多い生涯を送って来ました。</p>
+        </a>
+    </section>
+    <section class="item item-maindish">
+        <a href="#">
+            <img class="image" src="./images/image_S_7.jpg" alt="テスト">
+            <div class="category">MAIN</div>
+            <p class="description">恥の多い生涯を送って来ました。</p>
+        </a>
+    </section>
+    <section class="item item-maindish">
+        <a href="#">
+            <img class="image" src="./images/image_S_8.jpg" alt="テスト">
+            <div class="category">MAIN</div>
+            <p class="description">恥の多い生涯を送って来ました。</p>
+        </a>
+    </section>
+    <section class="item item-column">
+        <a href="#">
+            <img class="image" src="./images/image_S_9.jpg" alt="テスト">
+            <div class="category">MAIN</div>
+            <p class="description">恥の多い生涯を送って来ました。</p>
+        </a>
+    </section>
+    <section class="item item-maindish">
+        <a href="#">
+            <img class="image" src="./images/image_S_10.jpg" alt="テスト">
+            <div class="category">MAIN</div>
+            <p class="description">恥の多い生涯を送って来ました。</p>
+        </a>
+    </section>
+
+    <section class="item item-l item-maindish">
+        <a href="#">
+            <img class="image" src="./images/image_L_1.jpg" alt="テスト">
+            <div class="category">MAIN</div>
+            <p class="description">恥の多い生涯を送って来ました。</p>
+        </a>
+    </section>
+
+    <section class="item item-m item-maindish">
+        <a href="#">
+            <img class="image" src="./images/image_M_1.jpg" alt="テスト">
+            <div class="category">MAIN</div>
+            <p class="description">恥の多い生涯を送って来ました。</p>
+        </a>
+    </section>
+
+    <section class="item item-m item-maindish">
+        <a href="#">
+            <img class="image" src="./images/image_M_2.jpg" alt="テスト">
+            <div class="category">MAIN</div>
+            <p class="description">恥の多い生涯を送って来ました。</p>
+        </a>
+    </section>
+    
+    <section class="item item-m item-maindish">
+        <a href="#">
+            <img class="image" src="./images/image_M_3.jpg" alt="テスト">
+            <div class="category">MAIN</div>
+            <p class="description">恥の多い生涯を送って来ました。</p>
+        </a>
+    </section>
+    <section class="item item-m item-maindish">
+        <a href="#">
+            <img class="image" src="./images/image_M_4.jpg" alt="テスト">
+            <div class="category">MAIN</div>
+            <p class="description">恥の多い生涯を送って来ました。</p>
+        </a>
+    </section>
+
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script>
+        window.onload = function () {
+            new Masonry('body', {
+                itemSelector: '.item',
+                columnWidth: 180,
+                gutter: 4
+            });
+        };
+    </script>
+</body>
+</html>
