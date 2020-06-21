@@ -140,4 +140,18 @@ body {
     width: 100%;
     margin: 0 0 60%;
 }
-
+.work-text {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+.work-text .button {
+    width: 60%;
+    margin-top: 20px;
+    padding: 3px;
+}
+.button-ghost {
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+}
