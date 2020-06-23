@@ -279,12 +279,13 @@ a:link, a:visited, a:hover, a:active {
     opacity: 0.8;
 }
 .ranking {
+    margin-top: 10px;
     margin-bottom: 30px;
     list-style-type: none;
     counter-reset: ranking;
 }
 .ranking .ranking-item {
-    margin-top: 15px;
+    position: relative;
 }
 .ranking .ranking-item a {
     display: block;
@@ -295,28 +296,25 @@ a:link, a:visited, a:hover, a:active {
     opacity: 0.8;
 }
 .ranking .image {
-    width: 55px;
-    height: 55px;
+    margin-right: 20px;
 }
 
 .ranking .order {
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    margin: 0 10px;
+    position: absolute;
+    top: -10px;
+    right: 245px;
+    width: 20px;
+    height: 20px;
     border: 1px solid #ccc;
     color: #aaa;
-    vertical-align: 20px;
     text-align: center;
     font-weight: bold;
     line-height: 16px;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+    border-radius: 50%;
 }
 .ranking .text {
     display: inline-block;
-    width: 182px;
+    width: 200px;
     color: #000;
     vertical-align: top;
     line-height: 1.5;
@@ -329,7 +327,7 @@ a:link, a:visited, a:hover, a:active {
     border: none;
     color: #fff;
     font-weight: normal;
-    line-height: 18px;
+    line-height: 20px;
 }
 .ranking .ranking-item:nth-of-type(1) .order {
     background-color: #dab413;
@@ -342,15 +340,9 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .ranking .order::before {
-    /* cssカウンタというものがあるみたい */
     content: counter(ranking);
     counter-increment: ranking;
-    display: inline-block;
     font-size: 1.0rem;
-    /* それぞれのブラウザに対応するため3つ書く */
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
 }
 .documents {
     margin: 10px 10px 10px;
