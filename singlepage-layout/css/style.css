@@ -85,12 +85,16 @@ body {
 .heading::before, 
 .heading::after {
     content: '';
-    position: absolute;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    /* 下線を引く */
-    border-bottom: 1px solid #999;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border: 1px solid;
+    margin-right: 15px;
+    margin-left: 15px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    vertical-align: 8px;
 }
 .heading::before {
     /* 下線を二重線にするために、線を上にずらす */
