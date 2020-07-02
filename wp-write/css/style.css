@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+html {
+    /* 10px */
+    font-size: 62.5%;
+}
+body {
+    color: #333;
+    font-size: 1.2rem;
+    font-family: Georgia, 游明朝, YuMincho, "Hiragino Mincho ProN", Meiryo, serif;;
+}
+*, *::before, *::after {
+}
+
+.wrapper {
+    margin: 60px 40px;
+}
+.content-wrapper {
+    padding-left: 45px;
+    padding-right: 45px;
+    width: 1035px;
+    margin: 0 auto;
+}
+
+
+.header {
+    height: 82px;
+    display: table;
+    margin-bottom: 70px;
+}
+
+.site-title {
+    width: 335px;
+    height: 100%;
+}
+.site-title .title{
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.site-title .title-sub {
+    color: #777777;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 4px;
+}
+
+.navbar {
+    display: table-cell;
+    vertical-align: bottom;
+    width: 700px;
+    height: 100%;
+    text-align: right;
+    /* float: right; */
+    padding-top: 0;
+}
+.nav-item {
+    font-size: 16.884px;
+    text-decoration: none;
+    color: #333;
+    float: left;
+    padding: 10px 35px 15px 0;
+}
+.nav-item-arrow::after {
+    content: "\02228";
+    display: inline-block;
+    font: normal 16px/1 Genericons;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    right: -8px;
+    top: 1px;
+    font-size: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    padding-left: 5px;
+}
+
+.navbar .nav-search {
+    font-size: 35px;
+}
+
+.feature-contents {
+    width: 1035px;
+    height: 863px;
+    display: block;
+}
+.text-contents {
+    width: 1035px;
+    height: 1431px;
+    display: block;
+    background-color: red;
+}
+.footer {
+    width: 1035px;
+    height: 570px;
+    display: block;
+    background-color: bisque;
+}
