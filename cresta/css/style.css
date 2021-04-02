@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+html {
+    /* 10px */
+    font-size: 62.5%;
+}
+body {
+    color: #333;
+    font-size: 1.2rem;
+    font-family: Georgia, 游明朝, YuMincho, "Hiragino Mincho ProN", Meiryo, serif;;
+}
+*, *::before, *::after {
+}
+
+.wrapper {
+    margin: 60px 40px;
+}
+.content-wrapper {
+    padding-left: 45px;
+    padding-right: 45px;
+    width: 1035px;
+    margin: 0 auto;
+}
+
+
+.header {
+    height: 82px;
+    display: table;
+    margin-bottom: 70px;
+}
