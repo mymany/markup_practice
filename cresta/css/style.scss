@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+html {
+    /* 10px */
+    font-size: 62.5%;
+}
+body {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-family: Georgia, 游明朝, YuMincho, "Hiragino Mincho ProN", Meiryo, serif;;
+}
+*, *::before, *::after {
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.header {
+}
+
+.main {
+    width: 100%;
+    height: 740px;
+    .main-image {
+        width: 1110px;
+        height: 640px;
+        background-image: url("../images/kv-img.png");
+        background-repeat: no-repeat no-repeat;
+        position: absolute;
+        float: left;
+        .main-title-content {
+            width: 292px;
+            height: 318px;
+            position: absolute;
+            top: 25%;
+            bottom: 25%;
+            left: 85%;
+            .company-title {
+                font-size: 74px;
+                line-height: 86px;
+                font-family: Montserrat;
+            }
+            .company-sub-title {
+                font-family: 游ゴシック体;
+                font-size: 20px;
+                line-height: 17px;
+                span {
+                    font-family: Montserrat Medium;
+                }
+            }
+        }
+    }
+    .main-title {
+        width: 780px;
+        height: 740px;
+        color: #ffffff;
+        background-color: #222222;
+        float: right;
+    }
+}
+.about_us {
+    width: 100%;
+    height: 767px;
+    display: flex;
+    justify-content: center;
+    .wrapper {
+        margin-top: 120px;
+        height: 607px;
+        width: 1100px;
+        background-image: url("../images/about-img.png");
+        .container {
+            width: 530px;
+            height: 327px;
+            margin-left: 50px;
+            margin-top: 110px;
+            background-color: #ffffff;
+            color: #333333;
+            padding: 50px 30px;
+            .title {
+                font-family: Montserrat;
+                font-size: 32px;
+                letter-spacing: 6.8px;
+                line-height: 94px;
+            }
+            .contents {
+                // padding: 30px;
+                font-family: Noto Sans;
+                font-size: 16px;
+                line-height: 32px;
+            }
+            .bottom_black {
+                margin-top: 30px;
+                width: 160px;
+                height: 36px;
+                background-color: #000000;
+                font-size: 12px;
+                font-family: Montserrat Medium;
+                text-align: center;
+                line-height: 32px;
+                letter-spacing: 1.5px;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+
