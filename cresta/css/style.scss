@@ -90,7 +90,7 @@ body {
             background-color: #ffffff;
             color: #333333;
             padding: 50px 30px;
-            .title {
+            .heading {
                 font-family: Montserrat;
                 font-size: 32px;
                 letter-spacing: 6.8px;
@@ -127,6 +127,7 @@ body {
             font-size: 16px;
             margin-top: 30px;
             margin-bottom: 30px;
+            color: #333333;
         }
     }
     .heading {
@@ -136,6 +137,62 @@ body {
         text-transform: uppercase;
         margin-bottom: 30px;
         color: #333333;
+    }
+}
+.topics {
+    width: 100%;
+    height: 468px;
+    .container {
+        width: 1110px;
+        height: 348px;
+        margin: 60px 170px;
+        display: flex;
+    }
+    .heading {
+        font-family: Montserrat;
+        font-size: 32px;
+        letter-spacing: 6.8px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        color: #333333;
+    }
+    .info-wrapper {
+        margin-left: 113px;
+        margin-top: 64px;
+        ul {
+            position: relative;
+        }
+        li {
+            font-size: 14px;
+            font-family: 游ゴシック体;
+            color: #333333;
+            list-style: none;
+            span {
+                font-size: 10px;
+                font-family: Montserrat Medium;
+                color: #CECECE;
+            }
+            .info-item-title {
+                letter-spacing: 0.01em;
+                // line-height: 6.71;
+                line-height: 3.4;
+                font-weight: bold;
+            }
+        }
+        li::after {
+            content: "";
+            height: 1px;
+            width: 100%;
+            position: absolute;
+            background-color: #DDDDDD;
+        }
+        li:nth-child(n+1) {
+            margin-top: 32px;
+        }
+        .bottom_black {
+            margin-left: auto;
+            margin-right: 0;
+        }
     }
 }
 
