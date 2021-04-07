@@ -143,7 +143,7 @@ body {
         background-image: url("../images/about-img.png");
         .container {
             width: 530px;
-            height: 327px;
+            height: 290px;
             margin-left: 50px;
             margin-top: 110px;
             background-color: #ffffff;
@@ -152,13 +152,15 @@ body {
             .heading {
                 font-family: Montserrat;
                 font-size: 32px;
-                letter-spacing: 6.8px;
-                line-height: 94px;
+                letter-spacing: 0.068em;
+                line-height: 1.3;
             }
             .contents {
+                margin-top: 30px;
                 font-family: Noto Sans;
                 font-size: 16px;
-                line-height: 32px;
+                line-height: 1.9;
+                letter-spacing: 0em;
             }
         }
     }
