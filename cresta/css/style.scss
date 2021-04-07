@@ -32,6 +32,37 @@ body {
     color: #ffffff;
 }
 
+.menu {
+    height: 13px;
+    width: 61px;
+    float: right;
+    margin-top: 36px;
+    margin-right: 58px;
+    position: relative;
+    p {
+        text-transform: uppercase;
+        font-size: 10px;
+        font-family: Montserrat;
+        margin-left: 25px;
+        line-height: 0.4;
+    }
+    span, span::before, span::after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 22px;
+        position: absolute;
+        background-color: #ffffff;
+    }
+    span::before {
+        bottom: 5px;
+    }
+    span::after {
+        top: 5px;
+    }
+}
+
+
 .main {
     width: 100%;
     height: 740px;
@@ -89,6 +120,7 @@ body {
             }
         }
     }
+
     .main-title {
         width: 780px;
         height: 740px;
