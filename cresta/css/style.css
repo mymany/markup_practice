@@ -118,7 +118,7 @@ body {
 
 .main .main-image .main-title-content .company-title {
   font-size: 74px;
-  line-height: 86px;
+  line-height: 1.27;
   font-family: Montserrat;
 }
 
@@ -128,7 +128,9 @@ body {
   line-height: 17px;
 }
 
-.main .main-image .main-title-content .company-sub-title span {
+.main .main-image .main-title-content .company-sub-title p {
+  margin-top: 4px;
+  margin-bottom: 4px;
   font-family: Montserrat Medium;
 }
 
