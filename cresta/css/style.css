@@ -41,6 +41,38 @@ body {
   float: left;
 }
 
+.main .main-image .wrapper-logo {
+  width: 260px;
+  height: 28px;
+  margin-top: 30px;
+  margin-left: 58px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .main-image .wrapper-logo .logo {
+  font-size: 24.8px;
+  line-height: 24.8px;
+  margin-left: 7.4px;
+}
+
+.main .main-image .wrapper-logo .logo a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.main .main-image .wrapper-logo .logo .lower {
+  font-size: 16px;
+}
+
+.main .main-image .wrapper-logo .logo img {
+  height: 28px;
+  width: 28px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .main .main-image .main-title-content {
   width: 292px;
   height: 318px;

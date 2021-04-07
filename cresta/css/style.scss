@@ -42,6 +42,31 @@ body {
         background-repeat: no-repeat no-repeat;
         position: absolute;
         float: left;
+        .wrapper-logo{
+            width: 260px;
+            height: 28px;
+            margin-top: 30px;
+            margin-left: 58px;
+            display: flex;
+            .logo {
+                font-size: 24.8px;
+                line-height: 24.8px;
+                margin-left: 7.4px;
+                a {
+                    color: #FFFFFF;
+                    text-decoration: none;
+                }
+                .lower {
+                    font-size: 16px;
+                }
+                img {
+                    height: 28px;
+                    width: 28px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
         .main-title-content {
             width: 292px;
             height: 318px;
