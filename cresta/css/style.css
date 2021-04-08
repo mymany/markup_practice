@@ -194,6 +194,10 @@ body {
   letter-spacing: 0em;
 }
 
+.vision {
+  height: 852px;
+}
+
 .vision .wrapper {
   background-image: none;
   width: 415px;
@@ -257,6 +261,38 @@ body {
   text-transform: uppercase;
   margin-bottom: 30px;
   color: #333333;
+}
+
+.ceo_message {
+  background-color: #FFFFFF;
+  height: 900px;
+}
+
+.ceo_message .image-wrapper {
+  width: 420px;
+  height: 282.5px;
+  margin-right: auto;
+  margin-left: 170px;
+}
+
+.ceo_message .container {
+  width: 770px;
+  height: 756px;
+  background-color: #F0F0F0;
+  margin-right: 170px;
+  margin-left: -90px;
+}
+
+.ceo_message .wrapper-ceo_message {
+  width: 400px;
+  height: 546px;
+  padding: 120px 185px 90px;
+}
+
+.ceo_message .content-ceo_message {
+  font-family: Noto Sans JP Bold;
+  font-size: 16px;
+  line-height: 2;
 }
 
 .topics {

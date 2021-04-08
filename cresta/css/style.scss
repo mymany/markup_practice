@@ -176,6 +176,7 @@ body {
 }
 .vision {
     @extend .about_us;
+    height: 852px;
     .wrapper {
         background-image: none;
         width: 415px;
@@ -240,7 +241,34 @@ body {
 }
 .ceo_message {
     @extend .works-culture;
-    
+    background-color: #FFFFFF;
+    height: 900px;
+    .image-wrapper {
+        width: 420px;
+        height: 282.5px;
+        margin-right: auto;
+        margin-left: 170px;
+    }
+    .container {
+        width: 770px;
+        height: 756px;
+        background-color: #F0F0F0;
+        margin-right: 170px;
+        margin-left: -90px;
+    }
+    .wrapper-ceo_message {
+        width: 400px;
+        height: 546px;
+        padding: 120px 185px 90px;
+    }
+    .heading {
+        
+    }
+    .content-ceo_message {
+        font-family: Noto Sans JP Bold;
+        font-size: 16px;
+        line-height: 2;
+    }
 }
 .topics {
     width: 100%;
