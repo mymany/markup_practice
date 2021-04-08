@@ -66,7 +66,7 @@ body {
   height: 740px;
 }
 
-.main .main-image {
+.main .main-image, .main .main-image_about_us {
   width: 1110px;
   height: 640px;
   background-image: url("../images/kv-img.png");
@@ -75,7 +75,7 @@ body {
   float: left;
 }
 
-.main .main-image .wrapper-logo {
+.main .main-image .wrapper-logo, .main .main-image_about_us .wrapper-logo {
   width: 260px;
   height: 28px;
   margin-top: 30px;
@@ -85,29 +85,29 @@ body {
   display: flex;
 }
 
-.main .main-image .wrapper-logo .logo {
+.main .main-image .wrapper-logo .logo, .main .main-image_about_us .wrapper-logo .logo {
   font-size: 24.8px;
   line-height: 24.8px;
   margin-left: 7.4px;
 }
 
-.main .main-image .wrapper-logo .logo a {
+.main .main-image .wrapper-logo .logo a, .main .main-image_about_us .wrapper-logo .logo a {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-.main .main-image .wrapper-logo .logo .lower {
+.main .main-image .wrapper-logo .logo .lower, .main .main-image_about_us .wrapper-logo .logo .lower {
   font-size: 16px;
 }
 
-.main .main-image .wrapper-logo .logo img {
+.main .main-image .wrapper-logo .logo img, .main .main-image_about_us .wrapper-logo .logo img {
   height: 28px;
   width: 28px;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.main .main-image .main-title-content {
+.main .main-image .main-title-content, .main .main-image_about_us .main-title-content {
   width: 292px;
   height: 318px;
   position: absolute;
@@ -116,25 +116,25 @@ body {
   left: 85%;
 }
 
-.main .main-image .main-title-content .company-title {
+.main .main-image .main-title-content .company-title, .main .main-image_about_us .main-title-content .company-title {
   font-size: 74px;
   line-height: 1.27;
   font-family: Montserrat;
 }
 
-.main .main-image .main-title-content .company-sub-title {
+.main .main-image .main-title-content .company-sub-title, .main .main-image_about_us .main-title-content .company-sub-title {
   font-family: 游ゴシック体;
   font-size: 20px;
   line-height: 17px;
 }
 
-.main .main-image .main-title-content .company-sub-title p {
+.main .main-image .main-title-content .company-sub-title p, .main .main-image_about_us .main-title-content .company-sub-title p {
   margin-top: 4px;
   margin-bottom: 4px;
   font-family: Montserrat Medium;
 }
 
-.main .main-title {
+.main .main-title, .main .main-title_about_us {
   width: 780px;
   height: 740px;
   color: #ffffff;
@@ -142,7 +142,16 @@ body {
   float: right;
 }
 
-.about_us {
+.main .main-image_about_us {
+  height: 387px;
+  background-image: url("../images/heading-img.png");
+}
+
+.main .main-title_about_us {
+  height: 464px;
+}
+
+.about_us, .vision {
   width: 100%;
   height: 767px;
   display: -webkit-box;
@@ -153,14 +162,14 @@ body {
           justify-content: center;
 }
 
-.about_us .wrapper {
+.about_us .wrapper, .vision .wrapper {
   margin-top: 120px;
   height: 607px;
   width: 1100px;
   background-image: url("../images/about-img.png");
 }
 
-.about_us .wrapper .container {
+.about_us .wrapper .container, .vision .wrapper .container {
   width: 530px;
   height: 290px;
   margin-left: 50px;
@@ -170,14 +179,14 @@ body {
   padding: 50px 30px;
 }
 
-.about_us .wrapper .container .heading {
+.about_us .wrapper .container .heading, .vision .wrapper .container .heading {
   font-family: Montserrat;
   font-size: 32px;
   letter-spacing: 0.068em;
   line-height: 1.3;
 }
 
-.about_us .wrapper .container .contents {
+.about_us .wrapper .container .contents, .vision .wrapper .container .contents {
   margin-top: 30px;
   font-family: Noto Sans;
   font-size: 16px;
@@ -185,7 +194,34 @@ body {
   letter-spacing: 0em;
 }
 
-.works-culture {
+.vision .wrapper {
+  background-image: none;
+  width: 415px;
+  height: 605px;
+  margin-top: 120px;
+}
+
+.vision .wrapper .container {
+  width: 415px;
+  margin: 0;
+  padding: 0;
+}
+
+.vision .heading-sub {
+  font-family: 游ゴシック体;
+  font-size: 24px;
+  margin-top: 30px;
+  letter-spacing: 0.005em;
+  line-height: 1;
+}
+
+.vision .contents {
+  font-family: Noto Sans JP Bold;
+  font-size: 16px;
+  line-height: 0.5;
+}
+
+.works-culture, .ceo_message {
   width: 100%;
   height: 771px;
   background-color: #F0F0F0;
@@ -198,7 +234,7 @@ body {
   margin-top: -140px;
 }
 
-.works-culture .container {
+.works-culture .container, .ceo_message .container {
   margin-top: 180px;
   width: 520px;
   height: 531px;
@@ -206,7 +242,7 @@ body {
   margin-right: 30px;
 }
 
-.works-culture .container p {
+.works-culture .container p, .ceo_message .container p {
   font-family: 游ゴシック体;
   font-size: 16px;
   margin-top: 30px;
@@ -214,7 +250,7 @@ body {
   color: #333333;
 }
 
-.works-culture .heading {
+.works-culture .heading, .ceo_message .heading {
   font-family: Montserrat;
   font-size: 32px;
   letter-spacing: 6.8px;
