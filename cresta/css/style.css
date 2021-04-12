@@ -307,20 +307,28 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topics .headnig-wrapper {
+  width: 22.22222vw;
 }
 
 .topics .heading {
-  font-family: Montserrat;
+  font-family: Montserrat ExtraBold;
   font-size: 32px;
-  letter-spacing: 6.8px;
+  letter-spacing: 0.068em;
   text-transform: uppercase;
   margin-bottom: 30px;
   color: #333333;
 }
 
 .topics .info-wrapper {
-  margin-left: 113px;
+  margin-left: 129px;
   margin-top: 64px;
+  width: 48.61111vw;
 }
 
 .topics .info-wrapper ul {
