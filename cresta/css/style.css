@@ -74,6 +74,7 @@ body {
 }
 
 .main .main-image .main-image-wrapper, .main .main-image_about_us .main-image-wrapper {
+  max-width: 1100px;
   width: 77.08333vw;
 }
 
