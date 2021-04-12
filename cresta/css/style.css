@@ -62,17 +62,19 @@ body {
 }
 
 .main {
-  width: 100%;
+  width: 100vw;
   height: 740px;
 }
 
 .main .main-image, .main .main-image_about_us {
-  width: 1110px;
+  width: 77.08333vw;
   height: 640px;
-  background-image: url("../images/kv-img.png");
-  background-repeat: no-repeat no-repeat;
   position: absolute;
   float: left;
+}
+
+.main .main-image .main-image-wrapper, .main .main-image_about_us .main-image-wrapper {
+  width: 77.08333vw;
 }
 
 .main .main-image .wrapper-logo, .main .main-image_about_us .wrapper-logo {
@@ -135,7 +137,7 @@ body {
 }
 
 .main .main-title, .main .main-title_about_us {
-  width: 780px;
+  width: 54.16667vw;
   height: 740px;
   color: #ffffff;
   background-color: #222222;
