@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+$vw: 100vw;
+$global_width: 1440px;
+$global_height: 4036px;
+$global_width_sp: 768px;
+
+@mixin tablet {
+    @media screen and (max-width: $global_width_sp){
+        @content;
+    } 
+}
+
 html {
     /* 10px */
     font-size: 62.5%;
@@ -62,18 +73,30 @@ body {
     }
 }
 
-
 .main {
-    width: 100%;
+    width: $vw;
     height: 740px;
     .main-image {
-        width: 1110px;
+        width: (1110px/$global_width) * $vw;
         height: 640px;
-        background-image: url("../images/kv-img.png");
-        background-repeat: no-repeat no-repeat;
         position: absolute;
         float: left;
-        .wrapper-logo{
+        @include tablet {
+            width: (600px/$global_width) * $vw;
+            // height: 640px;
+            position: absolute;
+            float: left;
+        }
+        .main-image-wrapper {
+            max-width: 1100px;
+            width: (1110px/$global_width) * $vw;
+            @include tablet {
+                width: (600px/$global_width) * $vw;
+                height: (890px/$global_height) * $vw;
+                object-fit: cover;
+            }
+        }
+        .wrapper-logo {
             width: 260px;
             height: 28px;
             margin-top: 30px;
@@ -123,11 +146,15 @@ body {
         }
     }
     .main-title {
-        width: 780px;
+        width: (780px/$global_width) * $vw;
         height: 740px;
         color: #ffffff;
         background-color: #222222;
         float: right;
+        @include tablet {
+            width: (562px/$global_width) * $vw;
+            height: 1024px
+        }
     }
     // about_us
     .main-image_about_us {
@@ -184,7 +211,6 @@ body {
         margin-top: 120px;
         .container {
             width: 415px;
-            // height: 605px;
             margin: 0;
             padding: 0;
         }
@@ -274,22 +300,27 @@ body {
     width: 100%;
     height: 468px;
     .container {
-        width: 1110px;
+        width: (1110px/$global_width ) * $vw;
         height: 348px;
         margin: 60px 170px;
         display: flex;
+        justify-content: space-between;
+    }
+    .headnig-wrapper {
+        width: (320px/$global_width) * $vw;
     }
     .heading {
-        font-family: Montserrat;
+        font-family: Montserrat ExtraBold;
         font-size: 32px;
-        letter-spacing: 6.8px;
+        letter-spacing: 0.068em;
         text-transform: uppercase;
         margin-bottom: 30px;
         color: #333333;
     }
     .info-wrapper {
-        margin-left: 113px;
+        margin-left: 129px;
         margin-top: 64px;
+        width: (700px/$global_width)*$vw;
         ul {
             position: relative;
         }
@@ -305,7 +336,6 @@ body {
             }
             .info-item-title {
                 letter-spacing: 0.01em;
-                // line-height: 6.71;
                 line-height: 3.4;
                 font-weight: bold;
             }
@@ -359,7 +389,8 @@ body {
     background-color: #F2F2F2;
     .container {
         display: flex;
-        padding: 60px 170px 120px;
+        padding: 60px (170px/$global_width)*$vw 120px;
+        justify-content: center;
         .container-left {
             width: 580px;
             height: 390px;
