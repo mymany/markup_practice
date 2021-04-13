@@ -2,6 +2,14 @@
 
 $vw: 100vw;
 $global_width: 1440px;
+$global_height: 4036px;
+$global_width_sp: 768px;
+
+@mixin tablet {
+    @media screen and (max-width: $global_width_sp){
+        @content;
+    } 
+}
 
 html {
     /* 10px */
@@ -65,7 +73,6 @@ body {
     }
 }
 
-
 .main {
     width: $vw;
     height: 740px;
@@ -74,9 +81,20 @@ body {
         height: 640px;
         position: absolute;
         float: left;
+        @include tablet {
+            width: (600px/$global_width) * $vw;
+            // height: 640px;
+            position: absolute;
+            float: left;
+        }
         .main-image-wrapper {
             max-width: 1100px;
-            width: (1110px/$global_width) * $vw; 
+            width: (1110px/$global_width) * $vw;
+            @include tablet {
+                width: (600px/$global_width) * $vw;
+                height: (890px/$global_height) * $vw;
+                object-fit: cover;
+            }
         }
         .wrapper-logo {
             width: 260px;
@@ -133,6 +151,10 @@ body {
         color: #ffffff;
         background-color: #222222;
         float: right;
+        @include tablet {
+            width: (562px/$global_width) * $vw;
+            height: 1024px
+        }
     }
     // about_us
     .main-image_about_us {
