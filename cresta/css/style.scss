@@ -1,12 +1,15 @@
 @charset "UTF-8";
 
 $vw: 100vw;
+$vh: 100vh;
+
 $global_width: 1440px;
-$global_height: 4036px;
-$global_width_sp: 768px;
+$global_height: 3226px;
+$global_width_tablet: 768px;
+$global_height_tablet: 4036px;
 
 @mixin tablet {
-    @media screen and (max-width: $global_width_sp){
+    @media screen and (max-width: $global_width_tablet){
         @content;
     } 
 }
@@ -24,7 +27,10 @@ body {
 }
 
 .wrapper {
-    width: 100%;
+    width: 100vw;
+    @include tablet {
+        width: ($global_width_tablet/$global_width) * $vw;
+    }
 }
 
 .header {
@@ -82,30 +88,37 @@ body {
         position: absolute;
         float: left;
         @include tablet {
-            width: (600px/$global_width) * $vw;
+            width: (600px/$global_width_tablet) * $vw;
             // height: 640px;
-            position: absolute;
-            float: left;
         }
         .main-image-wrapper {
-            max-width: 1100px;
+            // max-width: 1100px;
             width: (1110px/$global_width) * $vw;
             @include tablet {
-                width: (600px/$global_width) * $vw;
-                height: (890px/$global_height) * $vw;
+                width: (600px/$global_width_tablet) * $vw;
+                height: 890px;
                 object-fit: cover;
             }
         }
         .wrapper-logo {
             width: 260px;
             height: 28px;
-            margin-top: 30px;
-            margin-left: 58px;
+            top: 30px;
+            left: 58px;
             display: flex;
+            position: absolute;
+            @include tablet {
+                width: (189px/$global_width_tablet) * $vw;
+                left: 30px;
+                top: 33.8px;
+            }
             .logo {
                 font-size: 24.8px;
                 line-height: 24.8px;
                 margin-left: 7.4px;
+                @include tablet {
+                    font-size: 20px;
+                }
                 a {
                     color: #FFFFFF;
                     text-decoration: none;
@@ -128,15 +141,28 @@ body {
             top: 25%;
             bottom: 25%;
             left: 85%;
+            @include tablet {
+                width: (245px/$global_width_tablet) * $vw;
+                height: 224px;
+                left: 70%;
+                top: 333px;
+            }
             .company-title {
                 font-size: 74px;
                 line-height: 1.27;
                 font-family: Montserrat;
+                @include tablet {
+                    font-size: 56px;
+                    letter-spacing: 0.06em;
+                }
             }
             .company-sub-title {
                 font-family: 游ゴシック体;
                 font-size: 20px;
                 line-height: 17px;
+                @include tablet {
+                    font-size: 16px;
+                }
                 p {
                     margin-top: 4px;
                     margin-bottom: 4px;
@@ -152,7 +178,7 @@ body {
         background-color: #222222;
         float: right;
         @include tablet {
-            width: (562px/$global_width) * $vw;
+            width: (562px/$global_width_tablet) * $vw;
             height: 1024px
         }
     }
