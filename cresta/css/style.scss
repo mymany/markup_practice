@@ -194,15 +194,22 @@ body {
     }
 }
 .about_us {
-    width: 100%;
+    width: 100vw;
     height: 767px;
     display: flex;
     justify-content: center;
+    @include tablet {
+        height: 619px;
+    }
     .wrapper {
         margin-top: 120px;
         height: 607px;
         width: 1100px;
         background-image: url("../images/about-img.png");
+        @include tablet {
+            width: 100vw;
+            height: 479px;
+        }
         .container {
             width: 530px;
             height: 290px;
@@ -211,6 +218,9 @@ body {
             background-color: #ffffff;
             color: #333333;
             padding: 50px 30px;
+            @include tablet {
+                margin: 60px 90px;
+            }
             .heading {
                 font-family: Montserrat;
                 font-size: 32px;
