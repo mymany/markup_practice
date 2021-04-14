@@ -299,7 +299,9 @@ body {
         margin-left: 30px;
         margin-right: 30px;
         @include tablet {
-            margin-top: 60px;
+            margin-top: 0;
+            height: 531px;
+            margin-bottom: 24px;
         }
         p {
             font-family: 游ゴシック体;
@@ -307,6 +309,11 @@ body {
             margin-top: 30px;
             margin-bottom: 30px;
             color: #333333;
+        }
+    }
+    .container:nth-child(n+1) {
+        @include tablet {
+            margin-top: 55px;
         }
     }
     .heading {

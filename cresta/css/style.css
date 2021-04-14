@@ -360,7 +360,9 @@ body {
 
 @media screen and (max-width: 768px) {
   .works-culture .container, .ceo_message .container {
-    margin-top: 60px;
+    margin-top: 0;
+    height: 531px;
+    margin-bottom: 24px;
   }
 }
 
@@ -370,6 +372,12 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
   color: #333333;
+}
+
+@media screen and (max-width: 768px) {
+  .works-culture .container:nth-child(n+1), .ceo_message .container:nth-child(n+1) {
+    margin-top: 55px;
+  }
 }
 
 .works-culture .heading, .ceo_message .heading {
