@@ -340,8 +340,11 @@ body {
     }
 }
 .topics {
-    width: 100%;
+    width: 100vw;
     height: 468px;
+    @include tablet {
+        // height: $global_height_tablet - 1024px - 479px - 60px  - 88px - 1242px - 867px - 50px;
+    }
     .container {
         width: (1110px/$global_width ) * $vw;
         height: 348px;
@@ -430,12 +433,14 @@ body {
     width: 100vw;
     height: 570px;
     background-color: #F2F2F2;
+    @include tablet {
+        height: 860px;
+    }
     .container {
         display: flex;
         padding: 60px (170px/$global_width)*$vw 120px;
         justify-content: center;
         @include tablet {
-            height: 747px;
             flex-flow: column-reverse;
         }
         .container-left {
@@ -467,7 +472,7 @@ body {
 }
 
 footer {
-    width: 100%;
+    width: 100vw;
     height: 50px;
     background-color: #525252;
     display: flex;

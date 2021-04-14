@@ -395,7 +395,7 @@ body {
 }
 
 .topics, .company {
-  width: 100%;
+  width: 100vw;
   height: 468px;
 }
 
@@ -504,6 +504,12 @@ body {
   background-color: #F2F2F2;
 }
 
+@media screen and (max-width: 768px) {
+  .contact {
+    height: 860px;
+  }
+}
+
 .contact .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -516,7 +522,6 @@ body {
 
 @media screen and (max-width: 768px) {
   .contact .container {
-    height: 747px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-flow: column-reverse;
@@ -554,7 +559,7 @@ body {
 }
 
 footer {
-  width: 100%;
+  width: 100vw;
   height: 50px;
   background-color: #525252;
   display: -webkit-box;
