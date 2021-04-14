@@ -427,13 +427,17 @@ body {
     }
 }
 .contact {
-    width: 100%;
+    width: 100vw;
     height: 570px;
     background-color: #F2F2F2;
     .container {
         display: flex;
         padding: 60px (170px/$global_width)*$vw 120px;
         justify-content: center;
+        @include tablet {
+            height: 747px;
+            flex-flow: column-reverse;
+        }
         .container-left {
             width: 580px;
             height: 390px;
