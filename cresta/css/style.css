@@ -263,6 +263,7 @@ body {
   .about_us .wrapper .container, .vision .wrapper .container {
     width: 69.01042vw;
     margin: 60px 11.71875vw;
+    height: 261px;
   }
 }
 
@@ -273,12 +274,24 @@ body {
   line-height: 1.3;
 }
 
+@media screen and (max-width: 768px) {
+  .about_us .wrapper .container .heading, .vision .wrapper .container .heading {
+    margin-top: -10px;
+  }
+}
+
 .about_us .wrapper .container .contents, .vision .wrapper .container .contents {
   margin-top: 30px;
   font-family: Noto Sans;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0em;
+}
+
+@media screen and (max-width: 768px) {
+  .about_us .wrapper .container .contents, .vision .wrapper .container .contents {
+    margin-top: 20px;
+  }
 }
 
 .vision {
