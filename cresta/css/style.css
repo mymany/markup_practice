@@ -328,7 +328,7 @@ body {
 @media screen and (max-width: 768px) {
   .works-culture, .ceo_message {
     width: 100vw;
-    height: 1241px;
+    height: 1242px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column;
@@ -343,6 +343,12 @@ body {
   height: 531px;
   margin-left: 30px;
   margin-right: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .works-culture .container, .ceo_message .container {
+    margin-top: 60px;
+  }
 }
 
 .works-culture .container p, .ceo_message .container p {
@@ -399,6 +405,12 @@ body {
   height: 468px;
 }
 
+@media screen and (max-width: 768px) {
+  .topics, .company {
+    height: 428px;
+  }
+}
+
 .topics .container, .company .container {
   width: 77.08333vw;
   height: 348px;
@@ -411,8 +423,24 @@ body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .topics .container, .company .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin: 40px 30px;
+  }
+}
+
 .topics .headnig-wrapper, .company .headnig-wrapper {
   width: 22.22222vw;
+}
+
+@media screen and (max-width: 768px) {
+  .topics .headnig-wrapper, .company .headnig-wrapper {
+    width: 40.36458vw;
+  }
 }
 
 .topics .heading, .company .heading {
@@ -424,10 +452,23 @@ body {
   color: #333333;
 }
 
+@media screen and (max-width: 768px) {
+  .topics .heading, .company .heading {
+    margin: 0;
+  }
+}
+
 .topics .info-wrapper, .company .info-wrapper {
   margin-left: 129px;
   margin-top: 64px;
   width: 48.61111vw;
+}
+
+@media screen and (max-width: 768px) {
+  .topics .info-wrapper, .company .info-wrapper {
+    margin: 0;
+    width: 91.14583vw;
+  }
 }
 
 .topics .info-wrapper ul, .company .info-wrapper ul {
@@ -468,6 +509,12 @@ body {
 .topics .info-wrapper .bottom_black, .company .info-wrapper .bottom_black {
   margin-left: auto;
   margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topics .info-wrapper .bottom_black, .company .info-wrapper .bottom_black {
+    margin-left: 0;
+  }
 }
 
 .company .list-wrapper {
