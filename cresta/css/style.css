@@ -231,7 +231,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .about_us, .vision {
-    height: 619px;
+    height: 600px;
   }
 }
 
@@ -323,6 +323,18 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: -140px;
+}
+
+@media screen and (max-width: 768px) {
+  .works-culture, .ceo_message {
+    width: 100vw;
+    height: 1241px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    margin: 0;
+  }
 }
 
 .works-culture .container, .ceo_message .container {
