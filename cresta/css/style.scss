@@ -27,7 +27,8 @@ body {
 }
 
 .wrapper {
-    width: 100vw;
+    width: $vw;
+    height: $vh;
 }
 
 .header {
@@ -89,11 +90,11 @@ body {
         float: left;
         @include tablet {
             width: (600px/$global_width_tablet) * $vw;
-            // height: 640px;
         }
         .main-image-wrapper {
-            // max-width: 1100px;
             width: (1110px/$global_width) * $vw;
+            max-height: 640px;
+            max-width: 1100px;
             @include tablet {
                 width: (600px/$global_width_tablet) * $vw;
                 height: 890px;
@@ -433,12 +434,6 @@ body {
                 margin-top: 13px;
             }
         }
-        // li:nth-child(n+1) {
-            // margin-top: 32px;
-            // @include tablet {
-                // margin-top: 19px;
-            // }
-        // }
         .bottom_black {
             margin-left: auto;
             margin-right: 0;
@@ -480,13 +475,15 @@ body {
     height: 570px;
     background-color: #F2F2F2;
     @include tablet {
-        height: 860px;
+        height: 888px;
     }
     .container {
         display: flex;
         padding: 60px (170px/$global_width)*$vw 120px;
         justify-content: center;
         @include tablet {
+            padding-top: 38px;
+            padding-left: 30px;
             flex-flow: column-reverse;
         }
         .container-left {
@@ -500,6 +497,9 @@ body {
                 margin-top: 72px;
                 margin-bottom: 30px;
                 color: #333333;
+                @include tablet {
+                    margin-top: -5px;
+                }
             }
             p {
                 font-family: 游ゴシック体;
@@ -514,6 +514,11 @@ body {
             width: 580px;
             height: 390px;
         }
+        .wrapper_image {
+            @include tablet {
+                width: (520px/$global_width_tablet) *$vw;
+            }
+        }
     }
 }
 
@@ -524,11 +529,10 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
     p {
         font-family: Montserrat Medium;
         font-size: 10px;
         letter-spacing: 0.01em;
-        line-height: 3.2;
-
     }
 }
