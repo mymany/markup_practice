@@ -28,9 +28,6 @@ body {
 
 .wrapper {
     width: 100vw;
-    @include tablet {
-        width: ($global_width_tablet/$global_width) * $vw;
-    }
 }
 
 .header {
@@ -47,6 +44,9 @@ body {
     line-height: 32px;
     letter-spacing: 1.5px;
     color: #ffffff;
+    @include tablet {
+        font-size: 11px;
+    }
 }
 
 .menu {
@@ -360,7 +360,7 @@ body {
     width: 100vw;
     height: 468px;
     @include tablet {
-        height: 428px;
+        height: 388px;
     }
     .container {
         width: (1110px/$global_width ) * $vw;
@@ -395,7 +395,7 @@ body {
         margin-top: 64px;
         width: (700px/$global_width)*$vw;
         @include tablet {
-            margin: 0;
+            margin: 6px 0 65px 0;
             width: (700px/$global_width_tablet)*$vw;;
         }
         ul {
@@ -406,14 +406,20 @@ body {
             font-family: 游ゴシック体;
             color: #333333;
             list-style: none;
-            span {
+            @include tablet {
+                margin-top: 30px;
+                margin-bottom: 45px;
+            }
+            .info-item-date {
                 font-size: 10px;
                 font-family: Montserrat Medium;
                 color: #CECECE;
+                @include tablet {
+                    margin-bottom: 13px;
+                }
             }
             .info-item-title {
                 letter-spacing: 0.01em;
-                line-height: 3.4;
                 font-weight: bold;
             }
         }
@@ -423,16 +429,21 @@ body {
             width: 100%;
             position: absolute;
             background-color: #DDDDDD;
+            @include tablet {
+                margin-top: 13px;
+            }
         }
-        li:nth-child(n+1) {
-            margin-top: 32px;
-        }
+        // li:nth-child(n+1) {
+            // margin-top: 32px;
+            // @include tablet {
+                // margin-top: 19px;
+            // }
+        // }
         .bottom_black {
             margin-left: auto;
             margin-right: 0;
             @include tablet {
                 margin-left: 0;
-                // margin-right: 0;
             }
         }
     }

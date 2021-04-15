@@ -14,12 +14,6 @@ body {
   width: 100vw;
 }
 
-@media screen and (max-width: 768px) {
-  .wrapper {
-    width: 53.33333vw;
-  }
-}
-
 .bottom_black {
   margin-top: 30px;
   width: 160px;
@@ -31,6 +25,12 @@ body {
   line-height: 32px;
   letter-spacing: 1.5px;
   color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .bottom_black {
+    font-size: 11px;
+  }
 }
 
 .menu {
@@ -428,7 +428,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .topics, .company {
-    height: 428px;
+    height: 388px;
   }
 }
 
@@ -487,7 +487,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .topics .info-wrapper, .company .info-wrapper {
-    margin: 0;
+    margin: 6px 0 65px 0;
     width: 91.14583vw;
   }
 }
@@ -503,15 +503,27 @@ body {
   list-style: none;
 }
 
-.topics .info-wrapper li span, .company .info-wrapper li span {
+@media screen and (max-width: 768px) {
+  .topics .info-wrapper li, .company .info-wrapper li {
+    margin-top: 30px;
+    margin-bottom: 45px;
+  }
+}
+
+.topics .info-wrapper li .info-item-date, .company .info-wrapper li .info-item-date {
   font-size: 10px;
   font-family: Montserrat Medium;
   color: #CECECE;
 }
 
+@media screen and (max-width: 768px) {
+  .topics .info-wrapper li .info-item-date, .company .info-wrapper li .info-item-date {
+    margin-bottom: 13px;
+  }
+}
+
 .topics .info-wrapper li .info-item-title, .company .info-wrapper li .info-item-title {
   letter-spacing: 0.01em;
-  line-height: 3.4;
   font-weight: bold;
 }
 
@@ -523,8 +535,10 @@ body {
   background-color: #DDDDDD;
 }
 
-.topics .info-wrapper li:nth-child(n+1), .company .info-wrapper li:nth-child(n+1) {
-  margin-top: 32px;
+@media screen and (max-width: 768px) {
+  .topics .info-wrapper li::after, .company .info-wrapper li::after {
+    margin-top: 13px;
+  }
 }
 
 .topics .info-wrapper .bottom_black, .company .info-wrapper .bottom_black {
