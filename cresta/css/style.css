@@ -483,13 +483,13 @@ body {
 }
 
 .topics .info-wrapper, .company .info-wrapper {
-  margin-left: 129px;
-  margin-top: 64px;
+  margin-top: 35px;
   width: 48.61111vw;
 }
 
 @media screen and (max-width: 768px) {
   .topics .info-wrapper, .company .info-wrapper {
+    margin-left: 129px;
     margin: 6px 0 65px 0;
     width: 91.14583vw;
   }
@@ -504,6 +504,8 @@ body {
   font-family: 游ゴシック体;
   color: #333333;
   list-style: none;
+  margin-top: 30px;
+  margin-bottom: 45px;
 }
 
 @media screen and (max-width: 768px) {
@@ -517,12 +519,7 @@ body {
   font-size: 10px;
   font-family: Montserrat Medium;
   color: #CECECE;
-}
-
-@media screen and (max-width: 768px) {
-  .topics .info-wrapper li .info-item-date, .company .info-wrapper li .info-item-date {
-    margin-bottom: 13px;
-  }
+  margin-bottom: 13px;
 }
 
 .topics .info-wrapper li .info-item-title, .company .info-wrapper li .info-item-title {
@@ -536,12 +533,7 @@ body {
   width: 100%;
   position: absolute;
   background-color: #DDDDDD;
-}
-
-@media screen and (max-width: 768px) {
-  .topics .info-wrapper li::after, .company .info-wrapper li::after {
-    margin-top: 13px;
-  }
+  margin-top: 13px;
 }
 
 .topics .info-wrapper .bottom_black, .company .info-wrapper .bottom_black {

@@ -392,10 +392,11 @@ body {
         }
     }
     .info-wrapper {
-        margin-left: 129px;
-        margin-top: 64px;
+
+        margin-top: 35px;
         width: (700px/$global_width)*$vw;
         @include tablet {
+            margin-left: 129px;
             margin: 6px 0 65px 0;
             width: (700px/$global_width_tablet)*$vw;;
         }
@@ -407,6 +408,8 @@ body {
             font-family: 游ゴシック体;
             color: #333333;
             list-style: none;
+            margin-top: 30px;
+            margin-bottom: 45px;
             @include tablet {
                 margin-top: 30px;
                 margin-bottom: 45px;
@@ -415,9 +418,7 @@ body {
                 font-size: 10px;
                 font-family: Montserrat Medium;
                 color: #CECECE;
-                @include tablet {
-                    margin-bottom: 13px;
-                }
+                margin-bottom: 13px;
             }
             .info-item-title {
                 letter-spacing: 0.01em;
@@ -430,9 +431,7 @@ body {
             width: 100%;
             position: absolute;
             background-color: #DDDDDD;
-            @include tablet {
-                margin-top: 13px;
-            }
+            margin-top: 13px;
         }
         .bottom_black {
             margin-left: auto;
