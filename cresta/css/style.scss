@@ -392,46 +392,12 @@ body {
         }
     }
     .info-wrapper {
-
         margin-top: 35px;
         width: (700px/$global_width)*$vw;
         @include tablet {
             margin-left: 129px;
             margin: 6px 0 65px 0;
             width: (700px/$global_width_tablet)*$vw;;
-        }
-        ul {
-            position: relative;
-        }
-        li {
-            font-size: 14px;
-            font-family: 游ゴシック体;
-            color: #333333;
-            list-style: none;
-            margin-top: 30px;
-            margin-bottom: 45px;
-            @include tablet {
-                margin-top: 30px;
-                margin-bottom: 45px;
-            }
-            .info-item-date {
-                font-size: 10px;
-                font-family: Montserrat Medium;
-                color: #CECECE;
-                margin-bottom: 13px;
-            }
-            .info-item-title {
-                letter-spacing: 0.01em;
-                font-weight: bold;
-            }
-        }
-        li::after {
-            content: "";
-            height: 1px;
-            width: 100%;
-            position: absolute;
-            background-color: #DDDDDD;
-            margin-top: 13px;
         }
         .bottom_black {
             margin-left: auto;
@@ -441,27 +407,66 @@ body {
             }
         }
     }
+    ul {
+        position: relative;
+    }
+    .info-item::after {
+        content: "";
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        background-color: #DDDDDD;
+        margin-top: 13px;
+    }
+    .info-item {
+        font-size: 14px;
+        font-family: 游ゴシック体;
+        color: #333333;
+        list-style: none;
+        margin-top: 30px;
+        margin-bottom: 45px;
+        @include tablet {
+            margin-top: 30px;
+            margin-bottom: 45px;
+        }
+        .info-item-date {
+            font-size: 10px;
+            font-family: Montserrat Medium;
+            color: #CECECE;
+            margin-bottom: 13px;
+        }
+        .info-item-title {
+            letter-spacing: 0.01em;
+            font-weight: bold;
+        }
+    }
 }
 .company {
     @extend .topics;
-    .list-wrapper {
+    .info-wrapper::before {
+        content: "";
+        height: 1px;
+        width: 100vw;
+        position: absolute;
+        background-color: #DDDDDD;
+        margin-top: 10px;
+        left: 0;
+    }
+    .info-item {
         display: flex;
-        font-family: 游ゴシック体;
-        line-height: 1.9;
-        .list-title {
-            width: 144px;
+        .info-item-date {
+            font-family: 游ゴシック体;
+            font-size: 16px;
             font-weight: bold;
+            color: #333333;
+            width: (144px/$global_width) * $vw;
         }
-        .list-item {
-
+        .info-item-title {
+            font-weight: normal;
         }
     }
-    .info-wrapper {
-        margin-left: 110px;
-        width: 100%;
-    }
-    .list-wrapper::after {
-        margin-top: 30px;
+    .info-item::after {
+        margin-top: 36px;
     }
     .heading-line {
         height: 1px;

@@ -495,47 +495,6 @@ body {
   }
 }
 
-.topics .info-wrapper ul, .company .info-wrapper ul {
-  position: relative;
-}
-
-.topics .info-wrapper li, .company .info-wrapper li {
-  font-size: 14px;
-  font-family: 游ゴシック体;
-  color: #333333;
-  list-style: none;
-  margin-top: 30px;
-  margin-bottom: 45px;
-}
-
-@media screen and (max-width: 768px) {
-  .topics .info-wrapper li, .company .info-wrapper li {
-    margin-top: 30px;
-    margin-bottom: 45px;
-  }
-}
-
-.topics .info-wrapper li .info-item-date, .company .info-wrapper li .info-item-date {
-  font-size: 10px;
-  font-family: Montserrat Medium;
-  color: #CECECE;
-  margin-bottom: 13px;
-}
-
-.topics .info-wrapper li .info-item-title, .company .info-wrapper li .info-item-title {
-  letter-spacing: 0.01em;
-  font-weight: bold;
-}
-
-.topics .info-wrapper li::after, .company .info-wrapper li::after {
-  content: "";
-  height: 1px;
-  width: 100%;
-  position: absolute;
-  background-color: #DDDDDD;
-  margin-top: 13px;
-}
-
 .topics .info-wrapper .bottom_black, .company .info-wrapper .bottom_black {
   margin-left: auto;
   margin-right: 0;
@@ -547,26 +506,77 @@ body {
   }
 }
 
-.company .list-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: 游ゴシック体;
-  line-height: 1.9;
+.topics ul, .company ul {
+  position: relative;
 }
 
-.company .list-wrapper .list-title {
-  width: 144px;
+.topics .info-item::after, .company .info-item::after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  background-color: #DDDDDD;
+  margin-top: 13px;
+}
+
+.topics .info-item, .company .info-item {
+  font-size: 14px;
+  font-family: 游ゴシック体;
+  color: #333333;
+  list-style: none;
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+
+@media screen and (max-width: 768px) {
+  .topics .info-item, .company .info-item {
+    margin-top: 30px;
+    margin-bottom: 45px;
+  }
+}
+
+.topics .info-item .info-item-date, .company .info-item .info-item-date {
+  font-size: 10px;
+  font-family: Montserrat Medium;
+  color: #CECECE;
+  margin-bottom: 13px;
+}
+
+.topics .info-item .info-item-title, .company .info-item .info-item-title {
+  letter-spacing: 0.01em;
   font-weight: bold;
 }
 
-.company .info-wrapper {
-  margin-left: 110px;
-  width: 100%;
+.company .info-wrapper::before {
+  content: "";
+  height: 1px;
+  width: 100vw;
+  position: absolute;
+  background-color: #DDDDDD;
+  margin-top: 10px;
+  left: 0;
 }
 
-.company .list-wrapper::after {
-  margin-top: 30px;
+.company .info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.company .info-item .info-item-date {
+  font-family: 游ゴシック体;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  width: 10vw;
+}
+
+.company .info-item .info-item-title {
+  font-weight: normal;
+}
+
+.company .info-item::after {
+  margin-top: 36px;
 }
 
 .company .heading-line {
