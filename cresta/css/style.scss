@@ -443,6 +443,7 @@ body {
 }
 .company {
     @extend .topics;
+    height: 1010px;
     .info-wrapper::before {
         content: "";
         height: 1px;
@@ -451,6 +452,9 @@ body {
         background-color: #DDDDDD;
         margin-top: 10px;
         left: 0;
+    }
+    .container {
+        height: 380px;
     }
     .info-item {
         display: flex;
@@ -472,6 +476,9 @@ body {
         height: 1px;
         width: 1100px;
         background-color: #DDDDDD;
+    }
+    .box_large {
+        display: block;
     }
 }
 .contact {

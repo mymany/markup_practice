@@ -547,6 +547,10 @@ body {
   font-weight: bold;
 }
 
+.company {
+  height: 1010px;
+}
+
 .company .info-wrapper::before {
   content: "";
   height: 1px;
@@ -555,6 +559,10 @@ body {
   background-color: #DDDDDD;
   margin-top: 10px;
   left: 0;
+}
+
+.company .container {
+  height: 380px;
 }
 
 .company .info-item {
@@ -583,6 +591,10 @@ body {
   height: 1px;
   width: 1100px;
   background-color: #DDDDDD;
+}
+
+.company .box_large {
+  display: block;
 }
 
 .contact {
