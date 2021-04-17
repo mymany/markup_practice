@@ -102,7 +102,7 @@ body {
             }
         }
         .wrapper-logo {
-            width: 260px;
+            width: 270px;
             height: 28px;
             top: 30px;
             left: 58px;
@@ -114,9 +114,10 @@ body {
                 top: 33.8px;
             }
             .logo {
-                font-size: 24.8px;
+                font-size: 34px;
                 line-height: 24.8px;
                 margin-left: 7.4px;
+                font-family: Montserrat;
                 @include tablet {
                     font-size: 20px;
                 }
@@ -124,15 +125,16 @@ body {
                     color: #FFFFFF;
                     text-decoration: none;
                 }
-                .lower {
-                    font-size: 16px;
-                }
                 img {
                     height: 28px;
                     width: 28px;
                     background-size: contain;
                     background-repeat: no-repeat;
                 }
+            }
+            .lower {
+                font-size: 22px;
+                margin-left: -4px;
             }
         }
         .main-title-content {

@@ -102,7 +102,7 @@ body {
 }
 
 .main .main-image .wrapper-logo, .main .main-image_about_us .wrapper-logo {
-  width: 260px;
+  width: 270px;
   height: 28px;
   top: 30px;
   left: 58px;
@@ -121,9 +121,10 @@ body {
 }
 
 .main .main-image .wrapper-logo .logo, .main .main-image_about_us .wrapper-logo .logo {
-  font-size: 24.8px;
+  font-size: 34px;
   line-height: 24.8px;
   margin-left: 7.4px;
+  font-family: Montserrat;
 }
 
 @media screen and (max-width: 768px) {
@@ -137,15 +138,16 @@ body {
   text-decoration: none;
 }
 
-.main .main-image .wrapper-logo .logo .lower, .main .main-image_about_us .wrapper-logo .logo .lower {
-  font-size: 16px;
-}
-
 .main .main-image .wrapper-logo .logo img, .main .main-image_about_us .wrapper-logo .logo img {
   height: 28px;
   width: 28px;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.main .main-image .wrapper-logo .lower, .main .main-image_about_us .wrapper-logo .lower {
+  font-size: 22px;
+  margin-left: -4px;
 }
 
 .main .main-image .main-title-content, .main .main-image_about_us .main-title-content {
