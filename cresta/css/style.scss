@@ -91,16 +91,7 @@ body {
         @include tablet {
             width: (600px/$global_width_tablet) * $vw;
         }
-        .main-image-wrapper {
-            width: (1110px/$global_width) * $vw;
-            max-height: 640px;
-            max-width: 1100px;
-            @include tablet {
-                width: (600px/$global_width_tablet) * $vw;
-                height: 890px;
-                object-fit: cover;
-            }
-        }
+
         .wrapper-logo {
             width: 270px;
             height: 28px;
@@ -137,52 +128,51 @@ body {
                 margin-left: -4px;
             }
         }
-        .main-title-content {
-            width: 292px;
-            height: 318px;
-            position: absolute;
-            top: 25%;
-            bottom: 25%;
-            left: 85%;
-            @include tablet {
-                width: (245px/$global_width_tablet) * $vw;
-                height: 224px;
-                left: 70%;
-                top: 333px;
-            }
-            .company-title {
-                font-size: 74px;
-                line-height: 1.27;
-                font-family: Montserrat;
-                @include tablet {
-                    font-size: 56px;
-                    letter-spacing: 0.06em;
-                }
-            }
-            .company-sub-title {
-                font-family: 游ゴシック体;
-                font-size: 20px;
-                line-height: 17px;
-                @include tablet {
-                    font-size: 16px;
-                }
-                p {
-                    margin-top: 4px;
-                    margin-bottom: 4px;
-                    font-family: Montserrat Medium;
-                }
-            }
+    }
+    .main-title-content {
+        width: 292px;
+        height: 318px;
+        position: absolute;
+        top: 25%;
+        bottom: 25%;
+        left: 85%;
+        @include tablet {
+            width: (245px/$global_width_tablet) * $vw;
+            height: 224px;
+            left: 70%;
+            top: 333px;
         }
-        .main-about-content {
-            @extend .main-title-content;
-            width: (440px/$global_width)*$vw;
-            top: 40%;
-            left: 75.5%;
-            letter-spacing: 0.28em;
+    }
+    .company-title {
+        font-size: 74px;
+        line-height: 1.27;
+        font-family: Montserrat;
+        @include tablet {
+            font-size: 56px;
+            letter-spacing: 0.06em;
         }
-        .company-sub-about-title {
-            @extend .company-sub-title;
-            letter-spacing: 0.005em;
+    }
+    .company-sub-title {
+        font-family: 游ゴシック体;
+        font-size: 20px;
+        line-height: 17px;
+        @include tablet {
+            font-size: 16px;
+        }
+    }
+    .company-text {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        font-family: Montserrat Medium;
+    }
+    .main-image-wrapper {
+        width: (1110px/$global_width) * $vw;
+        max-height: 640px;
+        max-width: 1100px;
+        @include tablet {
+            width: (600px/$global_width_tablet) * $vw;
+            height: 890px;
+            object-fit: cover;
         }
     }
     .main-title {
@@ -196,13 +186,23 @@ body {
             height: 1024px
         }
     }
-    // about_us
-    .main-image_about_us {
-        @extend .main-image;
+}
+.about_main {
+    @extend .main;
+    height: 400px;
+    .main-title-content {
+        width: (440px/$global_width)*$vw;
+        top: 40%;
+        left: 75.5%;
+        letter-spacing: 0.28em;
+    }
+    .company-sub-title {
+        letter-spacing: 0.005em;
+    }
+    .main-image {
         height: 387px;
     }
-    .main-title_about_us {
-        @extend .main-title;
+    .main-title {
         height: 464px;
     }
 }
@@ -223,56 +223,57 @@ body {
             width: 100vw;
             height: 479px;
         }
-        .container {
-            width: 530px;
-            height: 290px;
-            margin-left: 50px;
-            margin-top: 110px;
-            background-color: #ffffff;
-            color: #333333;
-            padding: 50px 30px;
-            @include tablet {
-                width: (530px/$global_width_tablet)*$vw;
-                margin: 60px (90px/$global_width_tablet)*$vw;
-                height: 261px;
-            }
-            .heading {
-                font-family: Montserrat;
-                font-size: 32px;
-                letter-spacing: 0.068em;
-                line-height: 1.3;
-                @include tablet {
-                    margin-top: -10px;
-                }
-            }
-            .contents {
-                margin-top: 30px;
-                font-family: Noto Sans;
-                font-size: 16px;
-                line-height: 1.9;
-                letter-spacing: 0em;
-                @include tablet {
-                    margin-top: 20px
-                }
-            }
+    }
+    .container {
+        width: 530px;
+        height: 290px;
+        margin-left: 50px;
+        margin-top: 110px;
+        background-color: #ffffff;
+        color: #333333;
+        padding: 50px 30px;
+        @include tablet {
+            width: (530px/$global_width_tablet)*$vw;
+            margin: 60px (90px/$global_width_tablet)*$vw;
+            height: 261px;
+        }
+    }
+    .heading {
+        font-family: Montserrat;
+        font-size: 32px;
+        letter-spacing: 0.068em;
+        line-height: 1.3;
+        @include tablet {
+            margin-top: -10px;
+        }
+    }
+    .contents {
+        margin-top: 30px;
+        font-family: Noto Sans;
+        font-size: 16px;
+        line-height: 1.9;
+        letter-spacing: 0em;
+        @include tablet {
+            margin-top: 20px
         }
     }
 }
 .vision {
     @extend .about_us;
-    height: 852px;
+    height: 985px;
     .wrapper {
         background-image: none;
         width: 415px;
-        height: 605px;
+        height: 305px;
         margin-top: 120px;
-        .container {
-            width: 415px;
-            margin: 0;
-            padding: 0;
-        }
+        margin-right: (630px/$global_width)*$vw;
+        margin-left: auto;
     }
-
+    .container {
+        width: 415px;
+        margin:  0;
+        padding: 0;
+    }
     .heading {
     }
     .heading-sub {
@@ -283,9 +284,12 @@ body {
         line-height: 1;
     }
     .contents {
-        font-family: Noto Sans JP Bold;
+        font-family: Noto Sans JP;
+        font-weight: bold;
         font-size: 16px;
-        line-height: 0.5;
+        line-height: 2;
+        color: #333333;
+        margin-top: 20px;
     }
 }
 
@@ -353,8 +357,7 @@ body {
         width: 770px;
         height: 756px;
         background-color: #F0F0F0;
-        margin-right: 170px;
-        margin-left: -90px;
+        margin: 145px 170px 0 -90px;
     }
     .wrapper-ceo_message {
         width: 400px;
@@ -362,12 +365,13 @@ body {
         padding: 120px 185px 90px;
     }
     .heading {
-        
+        letter-spacing: (68/32);
     }
     .content-ceo_message {
         font-family: Noto Sans JP Bold;
         font-size: 16px;
         line-height: 2;
+        
     }
 }
 .topics {

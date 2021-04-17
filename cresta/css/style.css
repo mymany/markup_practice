@@ -68,12 +68,12 @@ body {
   top: 5px;
 }
 
-.main {
+.main, .about_main {
   width: 100vw;
   height: 740px;
 }
 
-.main .main-image, .main .main-image_about_us {
+.main .main-image, .about_main .main-image {
   width: 77.08333vw;
   height: 640px;
   position: absolute;
@@ -81,27 +81,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .main .main-image, .main .main-image_about_us {
+  .main .main-image, .about_main .main-image {
     width: 78.125vw;
   }
 }
 
-.main .main-image .main-image-wrapper, .main .main-image_about_us .main-image-wrapper {
-  width: 77.08333vw;
-  max-height: 640px;
-  max-width: 1100px;
-}
-
-@media screen and (max-width: 768px) {
-  .main .main-image .main-image-wrapper, .main .main-image_about_us .main-image-wrapper {
-    width: 78.125vw;
-    height: 890px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-
-.main .main-image .wrapper-logo, .main .main-image_about_us .wrapper-logo {
+.main .main-image .wrapper-logo, .about_main .main-image .wrapper-logo {
   width: 270px;
   height: 28px;
   top: 30px;
@@ -113,14 +98,14 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .main .main-image .wrapper-logo, .main .main-image_about_us .wrapper-logo {
+  .main .main-image .wrapper-logo, .about_main .main-image .wrapper-logo {
     width: 24.60938vw;
     left: 30px;
     top: 33.8px;
   }
 }
 
-.main .main-image .wrapper-logo .logo, .main .main-image_about_us .wrapper-logo .logo {
+.main .main-image .wrapper-logo .logo, .about_main .main-image .wrapper-logo .logo {
   font-size: 34px;
   line-height: 24.8px;
   margin-left: 7.4px;
@@ -128,29 +113,29 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .main .main-image .wrapper-logo .logo, .main .main-image_about_us .wrapper-logo .logo {
+  .main .main-image .wrapper-logo .logo, .about_main .main-image .wrapper-logo .logo {
     font-size: 20px;
   }
 }
 
-.main .main-image .wrapper-logo .logo a, .main .main-image_about_us .wrapper-logo .logo a {
+.main .main-image .wrapper-logo .logo a, .about_main .main-image .wrapper-logo .logo a {
   color: #FFFFFF;
   text-decoration: none;
 }
 
-.main .main-image .wrapper-logo .logo img, .main .main-image_about_us .wrapper-logo .logo img {
+.main .main-image .wrapper-logo .logo img, .about_main .main-image .wrapper-logo .logo img {
   height: 28px;
   width: 28px;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.main .main-image .wrapper-logo .lower, .main .main-image_about_us .wrapper-logo .lower {
+.main .main-image .wrapper-logo .lower, .about_main .main-image .wrapper-logo .lower {
   font-size: 22px;
   margin-left: -4px;
 }
 
-.main .main-image .main-title-content, .main .main-image_about_us .main-title-content, .main .main-image .main-about-content, .main .main-image_about_us .main-about-content {
+.main .main-title-content, .about_main .main-title-content {
   width: 292px;
   height: 318px;
   position: absolute;
@@ -160,7 +145,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .main .main-image .main-title-content, .main .main-image_about_us .main-title-content, .main .main-image .main-about-content, .main .main-image_about_us .main-about-content {
+  .main .main-title-content, .about_main .main-title-content {
     width: 31.90104vw;
     height: 224px;
     left: 70%;
@@ -168,49 +153,53 @@ body {
   }
 }
 
-.main .main-image .main-title-content .company-title, .main .main-image_about_us .main-title-content .company-title, .main .main-image .main-about-content .company-title, .main .main-image_about_us .main-about-content .company-title {
+.main .company-title, .about_main .company-title {
   font-size: 74px;
   line-height: 1.27;
   font-family: Montserrat;
 }
 
 @media screen and (max-width: 768px) {
-  .main .main-image .main-title-content .company-title, .main .main-image_about_us .main-title-content .company-title, .main .main-image .main-about-content .company-title, .main .main-image_about_us .main-about-content .company-title {
+  .main .company-title, .about_main .company-title {
     font-size: 56px;
     letter-spacing: 0.06em;
   }
 }
 
-.main .main-image .main-title-content .company-sub-title, .main .main-image_about_us .main-title-content .company-sub-title, .main .main-image .main-about-content .company-sub-title, .main .main-image_about_us .main-about-content .company-sub-title, .main .main-image .main-title-content .company-sub-about-title, .main .main-image .main-about-content .company-sub-about-title, .main .main-image_about_us .main-title-content .company-sub-about-title, .main .main-image_about_us .main-about-content .company-sub-about-title {
+.main .company-sub-title, .about_main .company-sub-title {
   font-family: 游ゴシック体;
   font-size: 20px;
   line-height: 17px;
 }
 
 @media screen and (max-width: 768px) {
-  .main .main-image .main-title-content .company-sub-title, .main .main-image_about_us .main-title-content .company-sub-title, .main .main-image .main-about-content .company-sub-title, .main .main-image_about_us .main-about-content .company-sub-title, .main .main-image .main-title-content .company-sub-about-title, .main .main-image .main-about-content .company-sub-about-title, .main .main-image_about_us .main-title-content .company-sub-about-title, .main .main-image_about_us .main-about-content .company-sub-about-title {
+  .main .company-sub-title, .about_main .company-sub-title {
     font-size: 16px;
   }
 }
 
-.main .main-image .main-title-content .company-sub-title p, .main .main-image_about_us .main-title-content .company-sub-title p, .main .main-image .main-about-content .company-sub-title p, .main .main-image_about_us .main-about-content .company-sub-title p, .main .main-image .main-title-content .company-sub-about-title p, .main .main-image .main-about-content .company-sub-about-title p, .main .main-image_about_us .main-title-content .company-sub-about-title p, .main .main-image_about_us .main-about-content .company-sub-about-title p {
+.main .company-text, .about_main .company-text {
   margin-top: 4px;
   margin-bottom: 4px;
   font-family: Montserrat Medium;
 }
 
-.main .main-image .main-about-content, .main .main-image_about_us .main-about-content {
-  width: 30.55556vw;
-  top: 40%;
-  left: 75.5%;
-  letter-spacing: 0.28em;
+.main .main-image-wrapper, .about_main .main-image-wrapper {
+  width: 77.08333vw;
+  max-height: 640px;
+  max-width: 1100px;
 }
 
-.main .main-image .company-sub-about-title, .main .main-image_about_us .company-sub-about-title {
-  letter-spacing: 0.005em;
+@media screen and (max-width: 768px) {
+  .main .main-image-wrapper, .about_main .main-image-wrapper {
+    width: 78.125vw;
+    height: 890px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
-.main .main-title, .main .main-title_about_us {
+.main .main-title, .about_main .main-title {
   width: 54.16667vw;
   height: 740px;
   color: #ffffff;
@@ -219,17 +208,32 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .main .main-title, .main .main-title_about_us {
+  .main .main-title, .about_main .main-title {
     width: 73.17708vw;
     height: 1024px;
   }
 }
 
-.main .main-image_about_us {
+.about_main {
+  height: 400px;
+}
+
+.about_main .main-title-content {
+  width: 30.55556vw;
+  top: 40%;
+  left: 75.5%;
+  letter-spacing: 0.28em;
+}
+
+.about_main .company-sub-title {
+  letter-spacing: 0.005em;
+}
+
+.about_main .main-image {
   height: 387px;
 }
 
-.main .main-title_about_us {
+.about_main .main-title {
   height: 464px;
 }
 
@@ -264,7 +268,7 @@ body {
   }
 }
 
-.about_us .wrapper .container, .vision .wrapper .container {
+.about_us .container, .vision .container {
   width: 530px;
   height: 290px;
   margin-left: 50px;
@@ -275,14 +279,14 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .about_us .wrapper .container, .vision .wrapper .container {
+  .about_us .container, .vision .container {
     width: 69.01042vw;
     margin: 60px 11.71875vw;
     height: 261px;
   }
 }
 
-.about_us .wrapper .container .heading, .vision .wrapper .container .heading {
+.about_us .heading, .vision .heading {
   font-family: Montserrat;
   font-size: 32px;
   letter-spacing: 0.068em;
@@ -290,12 +294,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .about_us .wrapper .container .heading, .vision .wrapper .container .heading {
+  .about_us .heading, .vision .heading {
     margin-top: -10px;
   }
 }
 
-.about_us .wrapper .container .contents, .vision .wrapper .container .contents {
+.about_us .contents, .vision .contents {
   margin-top: 30px;
   font-family: Noto Sans;
   font-size: 16px;
@@ -304,23 +308,25 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .about_us .wrapper .container .contents, .vision .wrapper .container .contents {
+  .about_us .contents, .vision .contents {
     margin-top: 20px;
   }
 }
 
 .vision {
-  height: 852px;
+  height: 985px;
 }
 
 .vision .wrapper {
   background-image: none;
   width: 415px;
-  height: 605px;
+  height: 305px;
   margin-top: 120px;
+  margin-right: 43.75vw;
+  margin-left: auto;
 }
 
-.vision .wrapper .container {
+.vision .container {
   width: 415px;
   margin: 0;
   padding: 0;
@@ -335,9 +341,12 @@ body {
 }
 
 .vision .contents {
-  font-family: Noto Sans JP Bold;
+  font-family: Noto Sans JP;
+  font-weight: bold;
   font-size: 16px;
-  line-height: 0.5;
+  line-height: 2;
+  color: #333333;
+  margin-top: 20px;
 }
 
 .works-culture, .ceo_message {
@@ -424,14 +433,17 @@ body {
   width: 770px;
   height: 756px;
   background-color: #F0F0F0;
-  margin-right: 170px;
-  margin-left: -90px;
+  margin: 145px 170px 0 -90px;
 }
 
 .ceo_message .wrapper-ceo_message {
   width: 400px;
   height: 546px;
   padding: 120px 185px 90px;
+}
+
+.ceo_message .heading {
+  letter-spacing: 2.125;
 }
 
 .ceo_message .content-ceo_message {
