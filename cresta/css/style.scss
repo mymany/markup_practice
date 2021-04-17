@@ -173,6 +173,17 @@ body {
                 }
             }
         }
+        .main-about-content {
+            @extend .main-title-content;
+            width: (440px/$global_width)*$vw;
+            top: 40%;
+            left: 75.5%;
+            letter-spacing: 0.28em;
+        }
+        .company-sub-about-title {
+            @extend .company-sub-title;
+            letter-spacing: 0.005em;
+        }
     }
     .main-title {
         width: (780px/$global_width) * $vw;
@@ -189,7 +200,6 @@ body {
     .main-image_about_us {
         @extend .main-image;
         height: 387px;
-        background-image: url("../images/heading-img.png");
     }
     .main-title_about_us {
         @extend .main-title;

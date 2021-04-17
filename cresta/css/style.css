@@ -150,7 +150,7 @@ body {
   margin-left: -4px;
 }
 
-.main .main-image .main-title-content, .main .main-image_about_us .main-title-content {
+.main .main-image .main-title-content, .main .main-image_about_us .main-title-content, .main .main-image .main-about-content, .main .main-image_about_us .main-about-content {
   width: 292px;
   height: 318px;
   position: absolute;
@@ -160,7 +160,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .main .main-image .main-title-content, .main .main-image_about_us .main-title-content {
+  .main .main-image .main-title-content, .main .main-image_about_us .main-title-content, .main .main-image .main-about-content, .main .main-image_about_us .main-about-content {
     width: 31.90104vw;
     height: 224px;
     left: 70%;
@@ -168,35 +168,46 @@ body {
   }
 }
 
-.main .main-image .main-title-content .company-title, .main .main-image_about_us .main-title-content .company-title {
+.main .main-image .main-title-content .company-title, .main .main-image_about_us .main-title-content .company-title, .main .main-image .main-about-content .company-title, .main .main-image_about_us .main-about-content .company-title {
   font-size: 74px;
   line-height: 1.27;
   font-family: Montserrat;
 }
 
 @media screen and (max-width: 768px) {
-  .main .main-image .main-title-content .company-title, .main .main-image_about_us .main-title-content .company-title {
+  .main .main-image .main-title-content .company-title, .main .main-image_about_us .main-title-content .company-title, .main .main-image .main-about-content .company-title, .main .main-image_about_us .main-about-content .company-title {
     font-size: 56px;
     letter-spacing: 0.06em;
   }
 }
 
-.main .main-image .main-title-content .company-sub-title, .main .main-image_about_us .main-title-content .company-sub-title {
+.main .main-image .main-title-content .company-sub-title, .main .main-image_about_us .main-title-content .company-sub-title, .main .main-image .main-about-content .company-sub-title, .main .main-image_about_us .main-about-content .company-sub-title, .main .main-image .main-title-content .company-sub-about-title, .main .main-image .main-about-content .company-sub-about-title, .main .main-image_about_us .main-title-content .company-sub-about-title, .main .main-image_about_us .main-about-content .company-sub-about-title {
   font-family: 游ゴシック体;
   font-size: 20px;
   line-height: 17px;
 }
 
 @media screen and (max-width: 768px) {
-  .main .main-image .main-title-content .company-sub-title, .main .main-image_about_us .main-title-content .company-sub-title {
+  .main .main-image .main-title-content .company-sub-title, .main .main-image_about_us .main-title-content .company-sub-title, .main .main-image .main-about-content .company-sub-title, .main .main-image_about_us .main-about-content .company-sub-title, .main .main-image .main-title-content .company-sub-about-title, .main .main-image .main-about-content .company-sub-about-title, .main .main-image_about_us .main-title-content .company-sub-about-title, .main .main-image_about_us .main-about-content .company-sub-about-title {
     font-size: 16px;
   }
 }
 
-.main .main-image .main-title-content .company-sub-title p, .main .main-image_about_us .main-title-content .company-sub-title p {
+.main .main-image .main-title-content .company-sub-title p, .main .main-image_about_us .main-title-content .company-sub-title p, .main .main-image .main-about-content .company-sub-title p, .main .main-image_about_us .main-about-content .company-sub-title p, .main .main-image .main-title-content .company-sub-about-title p, .main .main-image .main-about-content .company-sub-about-title p, .main .main-image_about_us .main-title-content .company-sub-about-title p, .main .main-image_about_us .main-about-content .company-sub-about-title p {
   margin-top: 4px;
   margin-bottom: 4px;
   font-family: Montserrat Medium;
+}
+
+.main .main-image .main-about-content, .main .main-image_about_us .main-about-content {
+  width: 30.55556vw;
+  top: 40%;
+  left: 75.5%;
+  letter-spacing: 0.28em;
+}
+
+.main .main-image .company-sub-about-title, .main .main-image_about_us .company-sub-about-title {
+  letter-spacing: 0.005em;
 }
 
 .main .main-title, .main .main-title_about_us {
@@ -216,7 +227,6 @@ body {
 
 .main .main-image_about_us {
   height: 387px;
-  background-image: url("../images/heading-img.png");
 }
 
 .main .main-title_about_us {
