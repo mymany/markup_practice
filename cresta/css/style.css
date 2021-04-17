@@ -356,6 +356,12 @@ body {
   margin-left: auto;
 }
 
+@media screen and (max-width: 768px) {
+  .vision .wrapper {
+    margin-left: 19.53125vw;
+  }
+}
+
 .vision .container {
   width: 415px;
   margin: 0;
