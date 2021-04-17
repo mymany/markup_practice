@@ -195,15 +195,37 @@ body {
         top: 40%;
         left: 75.5%;
         letter-spacing: 0.28em;
+        @include tablet() {
+            width: (315px/$global_width_tablet) *$vw;
+            top: 50%;
+            left: 61.5%;
+        }
     }
     .company-sub-title {
         letter-spacing: 0.005em;
     }
+    .company-title {
+        @include tablet() {
+            font-size: 52px;
+
+        }
+    }
     .main-image {
         height: 387px;
     }
+    .main-image-wrapper {
+        @include tablet {
+            width: (587px/$global_width_tablet) *$vw;
+            height: 529px;
+            object-fit: cover;
+        }
+    }
     .main-title {
         height: 464px;
+        @include tablet {
+            width: (406px/$global_width_tablet) * $vw;
+            height: 615px;
+        }
     }
 }
 .about_us {

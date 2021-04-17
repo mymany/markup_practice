@@ -225,16 +225,46 @@ body {
   letter-spacing: 0.28em;
 }
 
+@media screen and (max-width: 768px) {
+  .about_main .main-title-content {
+    width: 41.01562vw;
+    top: 50%;
+    left: 61.5%;
+  }
+}
+
 .about_main .company-sub-title {
   letter-spacing: 0.005em;
+}
+
+@media screen and (max-width: 768px) {
+  .about_main .company-title {
+    font-size: 52px;
+  }
 }
 
 .about_main .main-image {
   height: 387px;
 }
 
+@media screen and (max-width: 768px) {
+  .about_main .main-image-wrapper {
+    width: 76.43229vw;
+    height: 529px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
 .about_main .main-title {
   height: 464px;
+}
+
+@media screen and (max-width: 768px) {
+  .about_main .main-title {
+    width: 52.86458vw;
+    height: 615px;
+  }
 }
 
 .about_us, .vision {
