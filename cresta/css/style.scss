@@ -371,7 +371,7 @@ body {
         font-family: Noto Sans JP Bold;
         font-size: 16px;
         line-height: 2;
-        
+
     }
 }
 .topics {
@@ -461,6 +461,10 @@ body {
 .company {
     @extend .topics;
     height: 1010px;
+    .info-wrapper {
+        margin-top: 54px;
+        margin-right: 155px;
+    }
     .info-wrapper::before {
         content: "";
         height: 1px;
@@ -472,9 +476,14 @@ body {
     }
     .container {
         height: 380px;
+        margin-top: 125px;
+    }
+    .map {
+        margin-top: 10px;
     }
     .info-item {
         display: flex;
+        margin-bottom: -3.5px;
         .info-item-date {
             font-family: 游ゴシック体;
             font-size: 16px;
@@ -484,10 +493,16 @@ body {
         }
         .info-item-title {
             font-weight: normal;
+            letter-spacing: 0.004em;
+            font-size: 16px;
         }
     }
     .info-item::after {
         margin-top: 36px;
+    }
+    .heading {
+        font-family: Montserrat;
+        letter-spacing: (68/32);
     }
     .heading-line {
         height: 1px;
