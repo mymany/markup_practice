@@ -395,6 +395,10 @@ body {
 .ceo_message {
   background-color: #FFFFFF;
   height: 900px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
 }
 
 .ceo_message .image-wrapper {

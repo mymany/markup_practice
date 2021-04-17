@@ -330,6 +330,7 @@ body {
     @extend .works-culture;
     background-color: #FFFFFF;
     height: 900px;
+    flex-flow: row-reverse;
     .image-wrapper {
         width: 420px;
         height: 282.5px;
