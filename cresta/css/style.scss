@@ -100,9 +100,9 @@ body {
             display: flex;
             position: absolute;
             @include tablet {
-                width: (189px/$global_width_tablet) * $vw;
+                width: (210px/$global_width_tablet) * $vw;
                 left: 30px;
-                top: 33.8px;
+                top: 30px;
             }
             .logo {
                 font-size: 34px;
@@ -110,7 +110,8 @@ body {
                 margin-left: 7.4px;
                 font-family: Montserrat;
                 @include tablet {
-                    font-size: 20px;
+                    font-size: 24px;
+                    margin-left: 5px;
                 }
                 a {
                     color: #FFFFFF;
@@ -126,7 +127,15 @@ body {
             .lower {
                 font-size: 22px;
                 margin-left: -4px;
+                @include tablet() {
+                    margin-left: 0;
+                    font-size: 15px;
+                }
             }
+        }
+        .wrapper-logo > img {
+            width: 18.2px;
+            height: 21px;
         }
     }
     .main-title-content {
@@ -197,8 +206,8 @@ body {
         letter-spacing: 0.28em;
         @include tablet() {
             width: (315px/$global_width_tablet) *$vw;
-            top: 50%;
-            left: 61.5%;
+            top: 56.5%;
+            left: 60%;
         }
     }
     .company-sub-title {
@@ -207,8 +216,12 @@ body {
     .company-title {
         @include tablet() {
             font-size: 52px;
-
+            letter-spacing: 0.063em;
         }
+    }
+    .company-text {
+        margin-top: 8px;
+        letter-spacing: 0.005em;
     }
     .main-image {
         height: 387px;
@@ -372,22 +385,46 @@ body {
     background-color: #FFFFFF;
     height: 900px;
     flex-flow: row-reverse;
+    @include tablet() {
+        padding: 0 30px 0;
+        width: $vw;
+    }
     .image-wrapper {
         width: 420px;
         height: 282.5px;
         margin-right: auto;
         margin-left: 170px;
+        @include tablet() {
+            width: (320px/$global_width_tablet) * $vw;
+            height: (216px/$global_width_tablet) * $vw;
+            // margin-left: 0;
+            margin-right: (-106px/$global_width_tablet) * $vw;
+        }
     }
     .container {
         width: 770px;
         height: 756px;
         background-color: #F0F0F0;
         margin: 145px 170px 0 -90px;
+        @include tablet() {
+            width: (494px/$global_width_tablet)*$vw;
+            height: 687px;
+            // margin-right: 0;
+        }
+    }
+    .container:nth-child(n+1) {
+        @include tablet() {
+            margin-top: 131px;
+        }
     }
     .wrapper-ceo_message {
         width: 400px;
         height: 546px;
         padding: 120px 185px 90px;
+        @include tablet() {
+            padding: 0 (40px/$global_width_tablet)*$vw 80px (40px/$global_width_tablet)*$vw;
+            margin-top: 109px;
+        }
     }
     .heading {
         letter-spacing: (68/32);
@@ -536,6 +573,11 @@ body {
     }
     .box_large {
         display: block;
+    }
+    .map_image_wrapper {
+        @include tablet() {
+            width: (708px/$global_width_tablet)*$vw;
+        }
     }
 }
 .contact {

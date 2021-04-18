@@ -99,9 +99,9 @@ body {
 
 @media screen and (max-width: 768px) {
   .main .main-image .wrapper-logo, .about_main .main-image .wrapper-logo {
-    width: 24.60938vw;
+    width: 27.34375vw;
     left: 30px;
-    top: 33.8px;
+    top: 30px;
   }
 }
 
@@ -114,7 +114,8 @@ body {
 
 @media screen and (max-width: 768px) {
   .main .main-image .wrapper-logo .logo, .about_main .main-image .wrapper-logo .logo {
-    font-size: 20px;
+    font-size: 24px;
+    margin-left: 5px;
   }
 }
 
@@ -133,6 +134,18 @@ body {
 .main .main-image .wrapper-logo .lower, .about_main .main-image .wrapper-logo .lower {
   font-size: 22px;
   margin-left: -4px;
+}
+
+@media screen and (max-width: 768px) {
+  .main .main-image .wrapper-logo .lower, .about_main .main-image .wrapper-logo .lower {
+    margin-left: 0;
+    font-size: 15px;
+  }
+}
+
+.main .main-image .wrapper-logo > img, .about_main .main-image .wrapper-logo > img {
+  width: 18.2px;
+  height: 21px;
 }
 
 .main .main-title-content, .about_main .main-title-content {
@@ -228,8 +241,8 @@ body {
 @media screen and (max-width: 768px) {
   .about_main .main-title-content {
     width: 41.01562vw;
-    top: 50%;
-    left: 61.5%;
+    top: 56.5%;
+    left: 60%;
   }
 }
 
@@ -240,7 +253,13 @@ body {
 @media screen and (max-width: 768px) {
   .about_main .company-title {
     font-size: 52px;
+    letter-spacing: 0.063em;
   }
+}
+
+.about_main .company-text {
+  margin-top: 8px;
+  letter-spacing: 0.005em;
 }
 
 .about_main .main-image {
@@ -458,11 +477,26 @@ body {
           flex-flow: row-reverse;
 }
 
+@media screen and (max-width: 768px) {
+  .ceo_message {
+    padding: 0 30px 0;
+    width: 100vw;
+  }
+}
+
 .ceo_message .image-wrapper {
   width: 420px;
   height: 282.5px;
   margin-right: auto;
   margin-left: 170px;
+}
+
+@media screen and (max-width: 768px) {
+  .ceo_message .image-wrapper {
+    width: 41.66667vw;
+    height: 28.125vw;
+    margin-right: -13.80208vw;
+  }
 }
 
 .ceo_message .container {
@@ -472,10 +506,30 @@ body {
   margin: 145px 170px 0 -90px;
 }
 
+@media screen and (max-width: 768px) {
+  .ceo_message .container {
+    width: 64.32292vw;
+    height: 687px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ceo_message .container:nth-child(n+1) {
+    margin-top: 131px;
+  }
+}
+
 .ceo_message .wrapper-ceo_message {
   width: 400px;
   height: 546px;
   padding: 120px 185px 90px;
+}
+
+@media screen and (max-width: 768px) {
+  .ceo_message .wrapper-ceo_message {
+    padding: 0 5.20833vw 80px 5.20833vw;
+    margin-top: 109px;
+  }
 }
 
 .ceo_message .heading {
@@ -677,6 +731,12 @@ body {
 
 .company .box_large {
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .company .map_image_wrapper {
+    width: 92.1875vw;
+  }
 }
 
 .contact {
