@@ -377,7 +377,8 @@ body {
 
 @media screen and (max-width: 768px) {
   .vision .wrapper {
-    margin-left: 19.53125vw;
+    margin-top: 90px;
+    margin-left: 37.10938vw;
   }
 }
 
@@ -402,6 +403,15 @@ body {
   line-height: 2;
   color: #333333;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .vision .contents {
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 2;
+    margin-top: 25px;
+  }
 }
 
 .works-culture, .ceo_message {

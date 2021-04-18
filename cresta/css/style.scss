@@ -304,7 +304,8 @@ body {
         margin-right: (630px/$global_width)*$vw;
         margin-left: auto;
         @include tablet() {
-            margin-left: (150px/$global_width_tablet)*$vw;
+            margin-top: 90px;
+            margin-left: (285px/$global_width_tablet)*$vw;
         }
     }
     .container {
@@ -328,6 +329,12 @@ body {
         line-height: 2;
         color: #333333;
         margin-top: 20px;
+        @include tablet() {
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: (28/14);
+            margin-top: 25px;
+        }
     }
 }
 
