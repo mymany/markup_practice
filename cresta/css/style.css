@@ -366,6 +366,12 @@ body {
   height: 985px;
 }
 
+@media screen and (max-width: 768px) {
+  .vision {
+    height: 703px;
+  }
+}
+
 .vision .wrapper {
   background-image: none;
   width: 415px;
@@ -455,12 +461,19 @@ body {
   }
 }
 
-.works-culture .container p, .ceo_message .container p {
+.works-culture .content_text, .ceo_message .content_text {
   font-family: 游ゴシック体;
   font-size: 16px;
   margin-top: 30px;
   margin-bottom: 30px;
   color: #333333;
+  line-height: 1.75;
+}
+
+@media screen and (max-width: 768px) {
+  .works-culture .content_text, .ceo_message .content_text {
+    margin-top: 26px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -487,13 +500,6 @@ body {
           flex-flow: row-reverse;
 }
 
-@media screen and (max-width: 768px) {
-  .ceo_message {
-    padding: 0 30px 0;
-    width: 100vw;
-  }
-}
-
 .ceo_message .image-wrapper {
   width: 420px;
   height: 282.5px;
@@ -505,7 +511,8 @@ body {
   .ceo_message .image-wrapper {
     width: 41.66667vw;
     height: 28.125vw;
-    margin-right: -13.80208vw;
+    margin-left: 22.78646vw;
+    margin-top: 5px;
   }
 }
 
@@ -518,15 +525,22 @@ body {
 
 @media screen and (max-width: 768px) {
   .ceo_message .container {
-    width: 64.32292vw;
+    width: 65.10417vw;
     height: 687px;
+    margin: 150px 170px 0 -105px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .ceo_message .container:nth-child(n+1) {
-    margin-top: 131px;
+    margin-top: 135px;
   }
+}
+
+.ceo_message .container_text {
+  font-family: Noto Sans JP Bold;
+  font-size: 16px;
+  line-height: 2;
 }
 
 .ceo_message .wrapper-ceo_message {
@@ -538,7 +552,8 @@ body {
 @media screen and (max-width: 768px) {
   .ceo_message .wrapper-ceo_message {
     padding: 0 5.20833vw 80px 5.20833vw;
-    margin-top: 109px;
+    margin-top: 113px;
+    width: 54.03646vw;
   }
 }
 
@@ -546,10 +561,10 @@ body {
   letter-spacing: 2.125;
 }
 
-.ceo_message .content-ceo_message {
-  font-family: Noto Sans JP Bold;
-  font-size: 16px;
-  line-height: 2;
+@media screen and (max-width: 768px) {
+  .ceo_message .heading {
+    margin-bottom: 10px;
+  }
 }
 
 .topics, .company {

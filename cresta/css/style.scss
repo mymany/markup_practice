@@ -296,6 +296,9 @@ body {
 .vision {
     @extend .about_us;
     height: 985px;
+    @include tablet() {
+        height: 703px;
+    }
     .wrapper {
         background-image: none;
         width: 415px;
@@ -365,12 +368,16 @@ body {
             height: 531px;
             margin-bottom: 24px;
         }
-        p {
-            font-family: 游ゴシック体;
-            font-size: 16px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            color: #333333;
+    }
+    .content_text {
+        font-family: 游ゴシック体;
+        font-size: 16px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: #333333;
+        line-height: (28/16);
+        @include tablet() {
+            margin-top: 26px;
         }
     }
     .container:nth-child(n+1) {
@@ -392,10 +399,6 @@ body {
     background-color: #FFFFFF;
     height: 900px;
     flex-flow: row-reverse;
-    @include tablet() {
-        padding: 0 30px 0;
-        width: $vw;
-    }
     .image-wrapper {
         width: 420px;
         height: 282.5px;
@@ -404,8 +407,8 @@ body {
         @include tablet() {
             width: (320px/$global_width_tablet) * $vw;
             height: (216px/$global_width_tablet) * $vw;
-            // margin-left: 0;
-            margin-right: (-106px/$global_width_tablet) * $vw;
+            margin-left: (175px/$global_width_tablet) * $vw;
+            margin-top: 5px;
         }
     }
     .container {
@@ -414,15 +417,23 @@ body {
         background-color: #F0F0F0;
         margin: 145px 170px 0 -90px;
         @include tablet() {
-            width: (494px/$global_width_tablet)*$vw;
+            width: (500px/$global_width_tablet)*$vw;
             height: 687px;
-            // margin-right: 0;
+            margin: 150px 170px 0 -105px;
         }
     }
     .container:nth-child(n+1) {
         @include tablet() {
-            margin-top: 131px;
+            margin-top: 135px;
         }
+    }
+    .container_text {
+        font-family: Noto Sans JP Bold;
+        font-size: 16px;
+        line-height: 2;
+        // @include tablet() {
+        //     margin-top: 10px;
+        // }
     }
     .wrapper-ceo_message {
         width: 400px;
@@ -430,17 +441,15 @@ body {
         padding: 120px 185px 90px;
         @include tablet() {
             padding: 0 (40px/$global_width_tablet)*$vw 80px (40px/$global_width_tablet)*$vw;
-            margin-top: 109px;
+            margin-top: 113px;
+            width: (415px/$global_width_tablet)*$vw;
         }
     }
     .heading {
         letter-spacing: (68/32);
-    }
-    .content-ceo_message {
-        font-family: Noto Sans JP Bold;
-        font-size: 16px;
-        line-height: 2;
-
+        @include tablet() {
+            margin-bottom: 10px;
+        }
     }
 }
 .topics {
