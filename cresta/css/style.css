@@ -699,14 +699,28 @@ body {
   margin-right: 155px;
 }
 
+@media screen and (max-width: 768px) {
+  .company .info-wrapper {
+    margin: 21px 3.90625vw 0 3.90625vw;
+  }
+}
+
 .company .info-wrapper::before {
   content: "";
   height: 1px;
-  width: 100vw;
+  width: 76.38889vw;
   position: absolute;
   background-color: #DDDDDD;
   margin-top: 10px;
   left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .company .info-wrapper::before {
+    width: 92.1875vw;
+  }
 }
 
 .company .container {
@@ -714,8 +728,20 @@ body {
   margin-top: 125px;
 }
 
+@media screen and (max-width: 768px) {
+  .company .container {
+    margin-top: 9px;
+  }
+}
+
 .company .map {
   margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .company .map {
+    margin-top: 62px;
+  }
 }
 
 .company .info-item {
@@ -723,6 +749,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: -3.5px;
+  line-height: 94/16;
+  letter-spacing: 0.004em;
 }
 
 .company .info-item .info-item-date {
@@ -731,6 +759,12 @@ body {
   font-weight: bold;
   color: #333333;
   width: 10vw;
+}
+
+@media screen and (max-width: 768px) {
+  .company .info-item .info-item-date {
+    width: 18.75vw;
+  }
 }
 
 .company .info-item .info-item-title {

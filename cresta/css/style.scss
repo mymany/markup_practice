@@ -542,32 +542,51 @@ body {
     .info-wrapper {
         margin-top: 54px;
         margin-right: 155px;
+        @include tablet() {
+            margin: 21px (30px/$global_width_tablet)*$vw 0 (30px/$global_width_tablet)*$vw;
+        }
     }
     .info-wrapper::before {
         content: "";
         height: 1px;
-        width: 100vw;
+        width: (1100px/$global_width)*$vw;
         position: absolute;
         background-color: #DDDDDD;
         margin-top: 10px;
         left: 0;
+        right: 0;
+        margin: auto;
+        @include tablet() {
+            width: (708px/$global_width_tablet)*$vw;
+        }
     }
     .container {
         height: 380px;
         margin-top: 125px;
+        @include tablet() {
+            margin-top: 9px;
+        }
     }
     .map {
         margin-top: 10px;
+        @include tablet() {
+            margin-top: 62px;
+        }
     }
     .info-item {
         display: flex;
         margin-bottom: -3.5px;
+        line-height: 94/16;
+        letter-spacing: 0.004em;
         .info-item-date {
             font-family: 游ゴシック体;
             font-size: 16px;
             font-weight: bold;
             color: #333333;
             width: (144px/$global_width) * $vw;
+            @include tablet() {
+                width: (144px/$global_width_tablet) * $vw;
+            }
         }
         .info-item-title {
             font-weight: normal;
